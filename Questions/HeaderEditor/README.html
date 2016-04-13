@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Header Editor - Problem Statement</title>
+        
+        <style>
+            body {
+                text-align: justify;
+                font-family: verdana;
+                width: 900px;
+            }
+            
+            figure img {
+                
+                box-shadow: rgba(0,0,0,0.2) 0px 2px 3px, inset rgba(0,0,0,0.2) 0px -1px 2px;
+                border-radius: 5px;
+                padding: 20px;
+            }
+            
+            figcaption {
+                padding-left: 20px;
+                font-style: italic;
+                font-size: 0.8em;
+            }
+            
+            .ex {
+                color: #000088;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <article>
+            <header>
+                <h1>Header Editor</h1>
+                
+                <p>In this exercise, you're going to display a simple blog post
+                   and provide a mechanism to change the title.</p>
+            </header>
+            
+            <section>
+                <h2>Part One: Display Mode</h2>
+                
+                <p>The first part is pretty easy: create a web page that looks 
+                   roughly like this:</p>
+                
+                <figure>
+                    <img src="DisplayMode.png" alt="Display mode" title="Display mode"/>
+                    <figcaption>The web page in display mode</figcaption>
+                </figure>
+                
+                <p>The blog post was written by 
+                   <span class="ex">Catherine Monvoisin</span>, whose home page is 
+                   <span class="ex">https://mycompany.com/monvoisinc</span>. She 
+                   posted the blog on <span class="ex">Saturday at 8pm</span>, which  
+                   we're going to pretend has a date/time of 
+                   <span class="ex">2015-10-31 20:00</span></p>
+                
+                <p>You can use the following text as filler for the paragraphs:</p>
+                
+                <blockquote class="ex">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                       do eiusmod tempor incididunt ut labore et dolore magna 
+                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                       ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                       aute irure dolor in reprehenderit in voluptate velit esse 
+                       cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                       occaecat cupidatat non proident, sunt in culpa qui officia 
+                       deserunt mollit anim id est laborum.</p>
+                </blockquote>
+            </section>
+            
+            <section>
+                <h2>Part Two: Edit Mode</h2>
+                
+                <p>Notice that <span class="ex">Edit</span> button next to the header? 
+                   Now it's time to make it do something useful.</p>
+                   
+                <p>When the <span class="ex">Edit</span> button is clicked, the header
+                   should disappear, replaced with an <span class="ex">input</span> 
+                   that allows the user to edit the header text, like this:</p>
+                   
+                <figure>
+                    <img src="EditMode.png" alt="Edit mode" title="Edit mode"/>
+                    <figcaption>The web page in edit mode</figcaption>
+                </figure>
+                
+                <p>When the user clicks <span class="ex">Done</span>, the 
+                   <span class="ex">input</span> should go away, and whatever text 
+                   they entered should become the  new header of the blog post, 
+                   like this:</p>
+                   
+                <figure>
+                    <img src="Changed.png" alt="New header" title="New header"/>
+                    <figcaption>The blog post with a new header</figcaption>
+                </figure>
+                
+                <p>You don't need to worry about persisting the new header; 
+                    replacing it inline is fine.</p>
+                    
+                <p>For bonus points, allow the user to press 
+                   <span class="ex">Enter</span> inside of the 
+                   <span class="ex">input</span> instead of  clicking 
+                   <span class="ex">Done</span>.</p>    
+            </section>
+        </article>
+    </body>
+</html>

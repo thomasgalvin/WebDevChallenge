@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validator - Problem Statement</title>
+        
+        <style>
+            body {
+                text-align: justify;
+                font-family: verdana;
+                width: 900px;
+            }
+            
+            figure img {
+                
+                box-shadow: rgba(0,0,0,0.2) 0px 2px 3px, inset rgba(0,0,0,0.2) 0px -1px 2px;
+                border-radius: 5px;
+                padding: 20px;
+            }
+            
+            figcaption {
+                padding-left: 20px;
+                font-style: italic;
+                font-size: 0.8em;
+            }
+            
+            .ex {
+                color: #000088;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <article>
+            <header>
+                <h1>Form Validator</h1>
+                
+                <p>In this exercise, you're going to do some simple form validation
+                   and, if everything checks out, display a confirmation message.</p>
+            </header>
+            
+            <section>
+                <h2>Part One: Form validation</h2>
+                
+                <p>The first part is pretty easy: create a sign-up form that looks 
+                   roughly like this:</p>
+                
+                <figure>
+                    <img src="EmptyForm.png" alt="Empty form" title="Empty form"/>
+                    <figcaption>The empty signup form</figcaption>
+                </figure>
+                
+                <p>The form should accept a <span class="ex">Name</span>,
+                   <span class="ex">Email address</span>, and a 
+                   <span class="ex">Confirmation email address</span>, and have a 
+                   checkbox to <span class="ex">Sign up for spam</span>.</p>
+            </section>
+            
+            <section>
+                <h2>Part Two: Validation</h2>
+                
+                <p>When the user click <span class="ex">Sign me up!</span>, your
+                   code should validate the form. There are four rules:</p>
+                   
+                <ol>
+                    <li><span class="ex">Name</span> cannot be empty</li>
+                    <li><span class="ex">Email</span> cannot be empty</li>
+                    <li><span class="ex">Confirmation email</span> cannot be empty</li>
+                    <li><span class="ex">Confirmation email</span> must match <span class="ex">Email</span></li>
+                </ol>
+                
+                <p>If your code detects an invalid entry, it should mark it with a
+                   red asterisk, like this:</p>
+                   
+                <figure>
+                    <img src="AllInvalid.png" alt="Invalid: " title="Invalid:"/>
+                    <figcaption>Invalid: empty input</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="EmailMismatch.png" alt="Invalid: " title="Invalid:"/>
+                    <figcaption>Invalid: <span class="ex">Confirmation email</span> doesn't match <span class="ex">Email</span></figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h2>Part Three: Confirmation</h2>
+                
+                <p>If the form passes validation, you should display a confirmation 
+                   message. The first line should say:</p>
+                   
+                <blockquote class="ex">
+                    <h1>Congratulations, ${Name}!</h1>
+                    
+                    <p>Our incredibly valuable content is on its way to your inbox
+                       as we speak!</p>
+                </blockquote>
+                 
+                <p>Below that, show a custom message, based on whether or not they 
+                   signed up for <span class="ex">Spam</span>. If they did, display:</p>
+                   
+                <blockquote class="ex">
+                    <p>And so is a ton of junk from our <strike>cohorts</strike> 
+                       valued partners!</p>
+                </blockquote>
+                
+                <p>But if they <em>don't</em> sign up for <span class="ex">Spam</span>,
+                   give them a moment to regret it:</p>
+                   
+                <blockquote class="ex">
+                    <p>But are you  sure you don't want those special offers?</p>
+                </blockquote>
+                
+                <p>The confirmation dialogs will look something like this:</p>
+                
+                <figure>
+                    <img src="SignUpSpam.png" alt="Sign up and accept spam" title="Sign up and accept spam"/>
+                    <figcaption>Sign up and accept <span class="ex">Spam</span></figcaption>
+                </figure>
+                
+                <p>Or like this:</p>
+                
+                <figure>
+                    <img src="SIgnUpNoSpam.png" alt="Sign up and reject spam" title="Sign up and reject spam"/>
+                    <figcaption>Sign up and reject <span class="ex">Spam</span></figcaption>
+                </figure>
+                
+                <p>You don't need to worry about actually submitting the form;
+                   just showing the confirmation message is enough.</p>
+            </section>
+        </article>
+    </body>
+</html>
